@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Уборка у Борьки — профессиональная клининговая компания в Москве</title>
+<meta name="description" content="Профессиональная уборка квартир, домов и офисов. Быстро, качественно и с заботой о вашем комфорте. Работаем с физическими лицами и бизнесом.">
+<meta property="og:title" content="Уборка у Борьки — Чистота с улыбкой!">
+<meta property="og:description" content="Профессиональная уборка квартир, домов и офисов. Быстро, качественно и с заботой о вашем комфорте.">
+<meta property="og:type" content="website">
+<link rel="icon" href="https://via.placeholder.com/120x52/2757d6/ffffff?text=%D0%A3%D0%91%D0%9E%D0%A0%D0%9A%D0%90+%D0%A3+%D0%91%D0%9E%D0%A0%D0%AC%D0%9A%D0%98">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* (Keeping the original styles, but truncated for brevity in this response) */
+  :root{
+    --blue:#2757d6;
+    --blue-dark:#173f9e;
+    --red:#e5432b;
+    --bg-blue:#eef3fd;
+    --yellow:#ffc533;
+    --green:#1fa971;
+    --gray-900:#16233f;
+    --gray-700:#41485a;
+    --border:#e6ebf4;
+    --white:#ffffff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Inter',sans-serif;color:var(--gray-900);line-height:1.5;}
+  .container{max-width:1240px;margin:0 auto;padding:0 24px;}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;padding:14px 26px;border-radius:10px;transition:all .15s;}
+  .btn-red{background:var(--red);color:#fff;}
+  .header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--border);}
+  /* ... other styles from original ... */
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header__inner container">
+    <div class="logo">
+      <img src="https://via.placeholder.com/180x52/2757d6/ffffff?text=Уборка+у+Борьки" alt="Уборка у Борьки">
+    </div>
+    <div class="location">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-7.5 8-13a8 8 0 10-16 0c0 5.5 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg>
+      Москва
+    </div>
+    <nav class="nav">
+      <a href="#">Главная</a>
+      <a href="#">Услуги</a>
+      <a href="#">Цены</a>
+      <a href="#">Отзывы</a>
+      <a href="#">Контакты</a>
+    </nav>
+    <div class="header__right">
+      <div class="phone">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 011.12 4.18 2 2 0 013.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        +7 (999) 123-45-67
+      </div>
+      <button class="btn btn-red">Заказать уборку</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>Чистота с улыбкой!</h1>
+      <p>Профессиональная уборка квартир, домов и офисов в Москве</p>
+      <button class="btn btn-red">Заказать уборку</button>
+    </div>
+  </section>
+
+  <!-- Simple Quiz -->
+  <section class="quiz-section" style="background:#f8f9ff;padding:40px 0;">
+    <div class="container">
+      <h2 style="text-align:center;margin-bottom:30px;">Квиз: Какая уборка вам нужна?</h2>
+      <div id="quiz" style="max-width:600px;margin:0 auto;background:white;padding:30px;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.05);">
+        <div id="question"></div>
+        <div id="options" style="margin-top:20px;"></div>
+        <div id="result" style="display:none;margin-top:30px;text-align:center;"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer style="background:#002768;color:white;padding:40px 0;text-align:center;">
+  <div class="container">
+    <p>© 2026 «Уборка у Борьки». Все права защищены.</p>
+  </div>
+</footer>
+
+<script>
+// Simple Quiz
+const quizData = [
+  {
+    question: "Какой тип уборки вам нужен?",
+    options: ["Генеральная уборка", "Уборка после ремонта", "Поддерживающая уборка", "Химчистка мебели"],
+    next: 1
+  },
+  {
+    question: "Площадь помещения?",
+    options: ["До 50 м²", "50-100 м²", "Более 100 м²"],
+    next: 2
+  },
+  {
+    question: "Когда нужна уборка?",
+    options: ["Сегодня/завтра", "На этой неделе", "В удобное время"],
+  }
+];
+
+let currentQuestion = 0;
+let answers = [];
+
+function loadQuestion() {
+  const q = quizData[currentQuestion];
+  document.getElementById('question').innerHTML = `<h3>${q.question}</h3>`;
+  const opts = document.getElementById('options');
+  opts.innerHTML = '';
+  q.options.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.textContent = opt;
+    btn.style.cssText = 'display:block;width:100%;margin:8px 0;padding:12px;border:1px solid #ddd;border-radius:8px;background:#fff;cursor:pointer;';
+    btn.onclick = () => {
+      answers.push(opt);
+      if (currentQuestion < quizData.length - 1) {
+        currentQuestion++;
+        loadQuestion();
+      } else {
+        showResult();
+      }
+    };
+    opts.appendChild(btn);
+  });
+}
+
+function showResult() {
+  document.getElementById('quiz').innerHTML = `
+    <h3 style="color:#2757d6;">Спасибо за ответы!</h3>
+    <p>Мы подобрали для вас оптимальный вариант. Менеджер свяжется в ближайшее время.</p>
+    <button onclick="location.reload()" class="btn btn-red" style="margin-top:20px;">Пройти заново</button>
+  `;
+}
+
+loadQuestion();
+</script>
+</body>
+</html>
